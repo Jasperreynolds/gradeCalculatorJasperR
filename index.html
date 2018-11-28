@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jasper's Grade Calculator</title>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+
+
+</head>
+<body onload="pageSetUp()">
+
+<div id="container">
+    <h1 class="w3-padding-16 w3-circle w3-green">Grade Calculator</h1>
+    <h3>Made by: Jasper Reynolds</h3>
+    <br>
+    <div id="disclaimer">Total Weight must equal 100</div>
+    <br>
+    <div id="tableContainer"></div>
+    <input type="text", id="category">
+    <button id="newRow" class="btn btn-success" onclick="addRow()">Add Row</button>
+<div id="weightedGrade">
+    <br>
+    <button id="calcGrade" class="btn btn-success" onclick="calculateCurrentGrade()">Your Grade</button>
+    <div id="displayGrade"></div>
+</div>
+<br>
+<div id="finalTestGradeCalc">
+    <table>
+        <tr>
+            <td>Desired Grade</td>
+            <td>Weight of Final</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="yourDesiredGrade" value="90"></td>
+            <td><input type="text" id="percentWeightOfFinal" value="20"></td>
+        </tr>
+    </table>
+    <br>
+    <button id="finalGradeCalc" class="btn btn-success" onclick="calculateGradeNeeded()">Grade You Need</button>
+    <div id="youNeedThis"></div>
+</div>
+
+</div>
+
+</body>
+</html>
