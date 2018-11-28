@@ -9,7 +9,7 @@ function pageSetUp(){
     addRow();
 }
 
-
+//this calculates the grade
 function calculateCurrentGrade(){
     var grades = [];
     var gradeWeight = [];
